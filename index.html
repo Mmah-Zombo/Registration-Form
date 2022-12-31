@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="display">
+        <div class="form" id="form_">
+            <form action="" method="get">
+                <header>Registration Form</header>
+                <div id="name" class="hints">
+                    <h3>Name</h3>
+                    <div class="box">
+                        <input type="text" name="firstname">
+                        <p>First Name</p>
+                    </div>
+                    <div class="box">
+                        <input type="text" name="lastname">
+                        <p>Last Name</p>
+                    </div>
+                </div>
+                <div id="company" class="hints">
+                    <h3>Company</h3>
+                    <input type="text" name="company">
+                </div>
+                <div id="email" class="hints">
+                    <h3>Email</h3>
+                    <input type="text" name="company">
+                </div>
+                <div id="phone" class="hints">
+                    <h3>Phone</h3>
+                    <div class="box" id="b1">
+                        <input type="text" name="code" maxlength="5">
+                        <p>Area Code</p>
+                    </div>
+                    <div class="box" id="b2">
+                        <input type="text" name="digits" maxlength="11">
+                        <p>Phone Number</p>
+                    </div>
+                </div>
+                <div id="subject" class="hints">
+                    <h3>Subject</h3>
+                    <select name="subject" id="subj">
+                        <option value="sub1">--Choose Option--</option>
+                        <option value="sub1">Subject1</option>
+                        <option value="sub2">Subject2</option>
+                        <option value="sub3">Subject3</option>
+                    </select>
+                </div>
+                <div id="status" class="hints">
+                    <h3>Are you a beginner?</h3>
+                        <p><input type="radio" name="status" value="yes" checked="checked">Yes</p>
+                        <p><input type="radio" name="status" value="no">No</p>
+                </div>
+                <div id="btn" class="hints" onclick="confirmation()">
+                    <p>Register</p>
+                </div>
+            </form>
+        </div>
+        <div class="confirmation" id="confirmation_">
+            <p>Form Sent!</p>
+            <input type="submit" name="ok" value="OK" onclick="closewindow()">
+        </div>
+    </div>
+    <script>
+        let confirm = document.getElementById("confirmation_")
+        let close = document.getElementById("form_") 
+
+        function confirmation()
+        {
+            confirm.classList.add("open-confirmation")
+            close.classList.add("close-form")
+        }
+        function closewindow()
+        {
+            confirm.classList.remove("open-confirmation")
+        }
+    </script>
+</body>
+</html>
