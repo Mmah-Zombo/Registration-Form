@@ -2,7 +2,7 @@ This is a project inspired by a youtube video. But unlike in the video I used fl
 
 🎀🎀🎀
 
-It is registration form built with HTML, CSS, and Javascipt.
+It is registration form built with HTML, CSS, and Javascipt (embedded in the HTML file).
 The form is not responsive, but has a simple animation (click the Register button to see this).
 
 I Hope you like it.
